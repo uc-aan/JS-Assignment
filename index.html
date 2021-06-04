@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Card Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+    
+
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+
+    <main>
+        <section class="game">
+            <ul class="stats">
+
+                <li>
+                    <p>Attempts</p>
+                    <p id="attempts">0</p>
+                </li>
+                <li><i class="fas fa-hourglass-start"></i>
+                    <p><span id="minutes">00</span>:<span id="seconds">00</span></p>
+                </li>
+                <li><i class="fas fa-undo"></i></li>
+            </ul>
+
+            <div id="game-board">
+
+            </div>
+
+
+
+            <form class="frm">
+
+                <ul class="opt">
+                    <li><input type="radio" name="series"/>series of 2 pics</li>
+                    <li><input type="radio" name="series"/>series of 3 pics</li>
+                    <li><input type="radio" name="series"/>series of 4 pics</li>
+                </ul>
+
+          
+
+                <button type="button" class="newgame" id="newgame">new game</button><br>
+                <button type="button" class="show">show</button><br>
+                <button type="button" class="help">help</button>
+
+
+        </form>
+
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
