@@ -13,6 +13,10 @@ $('.help').click(function(){
 $('.show').attr('disabled',true);
 
 $('#newgame').click(function () {
+
+    
+    let showButton = $('.show');
+    showButton.attr('disabled', false);
     
     $("#newgame").attr('disabled', true);
 
@@ -36,10 +40,11 @@ $('#newgame').click(function () {
         Seconds.html(sec +1)
         sec++;
 
-        if(sec > 5){
-            alert("GAME OVER!" + attempts +" "+ (sec -= 1));
+        if(sec >= 5){
+            alert("GAME OVER!");
             clearInterval(stopRef);
-            location.reload();
+            showSolution();
+            showButton.attr('disabled', true);
         }
 
     },1000);
@@ -48,7 +53,7 @@ $('#newgame').click(function () {
 
     
     createBoard();
-    
+
   
 
 
@@ -56,8 +61,14 @@ $('#newgame').click(function () {
         location.reload();
     });
 
-    
    
+
+    showButton.click(function(){
+        showSolution();
+    });
+
+
+    
     $('.card').click(function (event) {
 
         
@@ -173,8 +184,11 @@ $('#newgame').click(function () {
     }
 
 
-
-    // Timer Watch
+    function showSolution() {
+        $('.card').each(function(){
+            $(this).toggleClass('flipped')
+        });
+    }
 
 
 
