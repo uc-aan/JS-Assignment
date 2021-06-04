@@ -147,7 +147,6 @@ li{
 
 .back {
     transform: rotateY(180deg);
-
 }
 
 .card.flipped,
@@ -159,47 +158,59 @@ li{
 /* Card Backgrounds */
 
 [data-card-type="A"] .back {
-    background: blue;
+    background: #f5f5f5 url(Cartoon-Zebra.svg);
+    background-repeat: no-repeat;
 }
 
 [data-card-type="B"] .back {
-    background: #f5f5f5;
+    background: #f5f5f5 url(santpanda.svg);
+    background-repeat: no-repeat;
 }
 
 [data-card-type="C"] .back {
-    background: red;
+    background: #f5f5f5 url(alarm_icon_jelly_bean.svg);
+    background-repeat: no-repeat;
 }
 
 [data-card-type="D"] .back {
-    background: green;
+    background: #f5f5f5 url(waterdrop.svg);
+    background-repeat: no-repeat;
 }
 
 [data-card-type="E"] .back {
-    background: rgb(131, 89, 12);
+    background: #f5f5f5 url(smilyface.svg);
+    background-repeat: no-repeat;
 }
 
 [data-card-type="F"] .back {
-    background: tomato;
+    background: #f5f5f5 url(bunneyofeaster.svg);
+    background-repeat: no-repeat;
 }
 
 [data-card-type="G"] .back {
-    background: #00eee2;
+    background: #f5f5f5 url(Warbler.svg);
+    background-repeat: no-repeat;
 }
 
 [data-card-type="H"] .back {
-    background: rgb(126, 126, 126);
+    background: #f5f5f5 url(pinguin.svg);
+    background-repeat: no-repeat;
 }
 [data-card-type="I"] .back {
-    background: rgb(248, 0, 145);
+    background: #f5f5f5 url(owl.one.svg);
+    background-repeat: no-repeat;
 }
 [data-card-type="J"] .back {
-    background: rgb(255, 176, 222);
+    background: #f5f5f5 url(starface.svg);
+    background-repeat: no-repeat;
 }
 [data-card-type="K"] .back {
-    background: rgb(63, 11, 41);
+    background: #f5f5f5 url(Jarno_8_ball.svg);
+    background-repeat: no-repeat;
 }
 [data-card-type="L"] .back {
-    background: rgb(212, 154, 230);
+    background: #f5f5f5 url(SandCastle.svg);
+    background-repeat: no-repeat;
 }
 
 /* POPUP MESSAGE */

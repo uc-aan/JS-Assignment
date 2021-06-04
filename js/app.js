@@ -61,7 +61,7 @@ $('#newgame').click(function () {
 
                 pairs++;
 
-                if (pairs === 12) {
+                if (pairs === 1) {
                     gameOver();
                 }
             }
@@ -127,7 +127,7 @@ $('#newgame').click(function () {
     }
     function messageWin() {
 
-        $(`<section class="game-over"><div class="message-box"><h2>You have found all pairs!</h2><p>Number of attempts:</p><p>Time required:</p><p><i class="fas fa-undo"></i></p></div></section>`).insertAfter($('.game'));
+        $(`<section class="game-over"><div class="message-box"><h2>You have found all pairs!</h2><p>Number of attempts: ${attempts}</p><p><i class="fas fa-undo"></i></p></div></section>`).insertAfter($('.game'));
         $('.message-box').fadeIn(1000);
 
     }
