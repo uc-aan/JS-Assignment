@@ -1,5 +1,19 @@
-$('#newgame').click(function () {
+$('.help').click(function(){
+    alert(`
+        1.There must be a 6 x 4 matrix behind which some pictures are hidden at the beginning.
+        2.On click of each cell, a picture will appear.
+        3.If the cell have the same picture as appeared in previous cell then both the pictures will stay visible.
+        4.If the cell have different pictures, then both the cells should flip back.
+        5.The game is solved when all pictures are visible.
+        6.The game should be a time limit of 60 seconds
+    `)
+});
 
+
+$('.show').attr('disabled',true);
+
+$('#newgame').click(function () {
+    
     $("#newgame").attr('disabled', true);
 
     
@@ -11,23 +25,42 @@ $('#newgame').click(function () {
     let clickCount = 0;
     let pairs = 0;
     let attempts = 0;
+    let Seconds = $("#seconds");
+
+
+    let stopRef;
+    let sec = 0;
+
+    
+    stopRef = setInterval(() => {
+        Seconds.html(sec +1)
+        sec++;
+
+        if(sec > 5){
+            alert("GAME OVER!" + attempts +" "+ (sec -= 1));
+            clearInterval(stopRef);
+            location.reload();
+        }
+
+    },1000);
+
+
 
     
     createBoard();
-
+    
+  
 
 
     $(document).on('click', '.fa-undo', function () {
         location.reload();
     });
 
-
-
-
+    
    
     $('.card').click(function (event) {
 
-
+        
         //flip card if it is not already open or the comparison array full
 
         if ($(this).hasClass("flipped") || $(this).hasClass("solved") || comparisonArray.length >= 2) {
@@ -138,6 +171,15 @@ $('#newgame').click(function () {
         $('#attempts').html(attempts);
 
     }
+
+
+
+    // Timer Watch
+
+
+
+    
+
 
 
 });
