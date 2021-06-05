@@ -9,6 +9,21 @@ $('.help').click(function(){
     `)
 });
 
+let series;
+
+function seriesValues() {
+    var ele = document.getElementsByName('series');
+      
+    for(i = 0; i < ele.length; i++) {
+        if(ele[i].checked){
+            return ele[i].value;
+        }
+    }
+}
+series.seriesValues();
+
+console.log();
+
 
 $('.show').attr('disabled',true);
 
