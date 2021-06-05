@@ -9,25 +9,43 @@ $('.help').click(function(){
     `)
 });
 
-let series;
+// function seriesValues() {
+//     var ele = document.getElementsByName('series');
+      
+//     for(i = 0; i < ele.length; i++) {
+//         if(ele[i].checked){
+
+//             if (ele[i].value == "2") {
+//                 alert(ele[i].value)
+//             }
+            
+//         }
+//     }
+// }
+
+
+
+
+
+$('.show').attr('disabled',true);
+
+
+
 
 function seriesValues() {
     var ele = document.getElementsByName('series');
       
     for(i = 0; i < ele.length; i++) {
         if(ele[i].checked){
-            return ele[i].value;
-        }
-    }
-}
-series.seriesValues();
 
-console.log();
+            if (ele[i].value == "2") {          
 
-
-$('.show').attr('disabled',true);
 
 $('#newgame').click(function () {
+
+
+
+    
 
     
     let showButton = $('.show');
@@ -55,7 +73,7 @@ $('#newgame').click(function () {
         Seconds.html(sec +1)
         sec++;
 
-        if(sec >= 5){
+        if(sec >= 59){
             alert("GAME OVER!");
             clearInterval(stopRef);
             showSolution();
@@ -120,7 +138,7 @@ $('#newgame').click(function () {
 
                 pairs++;
 
-                if (pairs === 1) {
+                if (pairs === 12) {
                     gameOver();
                 }
             }
@@ -211,4 +229,27 @@ $('#newgame').click(function () {
 
 
 
+
 });
+
+
+
+}else{
+
+
+
+alert("Select series of pics");
+
+location.reload();
+
+
+
+
+
+
+
+}
+                
+}
+}
+}
