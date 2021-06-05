@@ -155,7 +155,7 @@ li{
 }
 
 
-/* Card Backgrounds */
+/* Card Backgrounds for Two Pairs */
 
 [data-card-type="A"] .back {
     background: #f5f5f5 url(Cartoon-Zebra.svg);
@@ -212,6 +212,51 @@ li{
     background: #f5f5f5 url(SandCastle.svg);
     background-repeat: no-repeat;
 }
+
+
+
+/* Card Backgrounds for Three Pairs */
+
+[data-card-type="1"] .back {
+    background: #f5f5f5 url(Cartoon-Zebra.svg);
+    background-repeat: no-repeat;
+}
+
+[data-card-type="2"] .back {
+    background: #f5f5f5 url(santpanda.svg);
+    background-repeat: no-repeat;
+}
+
+[data-card-type="3"] .back {
+    background: #f5f5f5 url(alarm_icon_jelly_bean.svg);
+    background-repeat: no-repeat;
+}
+
+[data-card-type="4"] .back {
+    background: #f5f5f5 url(waterdrop.svg);
+    background-repeat: no-repeat;
+}
+
+[data-card-type="5"] .back {
+    background: #f5f5f5 url(smilyface.svg);
+    background-repeat: no-repeat;
+}
+
+[data-card-type="6"] .back {
+    background: #f5f5f5 url(bunneyofeaster.svg);
+    background-repeat: no-repeat;
+}
+
+[data-card-type="7"] .back {
+    background: #f5f5f5 url(Warbler.svg);
+    background-repeat: no-repeat;
+}
+
+[data-card-type="8"] .back {
+    background: #f5f5f5 url(pinguin.svg);
+    background-repeat: no-repeat;
+}
+
 
 /* POPUP MESSAGE */
 
