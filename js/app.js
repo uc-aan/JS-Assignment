@@ -84,6 +84,7 @@ $('#newgame').click(function () {
             showSolution();
             showButton.attr('disabled', true);
             Seconds.hide();
+            $("[data-card-type=" + comparisonArray[0] + "]").removeClass('flipped').addClass('solved');
         }
 
     },1000);
@@ -294,6 +295,8 @@ $('#newgame').click(function () {
             showSolution();
             showButton.attr('disabled', true);
             Seconds.hide();
+            $("[data-card-type=" + comparisonArray[0] + "]").removeClass('flipped').addClass('solved');
+            $("[data-card-type=" + comparisonArray[1] + "]").removeClass('flipped').addClass('solved');
         }
 
     },1000);
@@ -353,7 +356,7 @@ $('#newgame').click(function () {
 
 
                 $("[data-card-type=" + comparisonArray[0] + "]").removeClass('flipped').addClass('solved');
-               $("[data-card-type=" + comparisonArray[1] + "]").removeClass('flipped').addClass('solved');
+                $("[data-card-type=" + comparisonArray[1] + "]").removeClass('flipped').addClass('solved');
 
 
                 pairs++;
@@ -512,6 +515,11 @@ $('#newgame').click(function () {
                 showSolution();
                 showButton.attr('disabled', true);
                 Seconds.hide();
+                
+                $("[data-card-type=" + comparisonArray[0] + "]").removeClass('flipped').addClass('solved');
+                $("[data-card-type=" + comparisonArray[1] + "]").removeClass('flipped').addClass('solved');
+                $("[data-card-type=" + comparisonArray[2] + "]").removeClass('flipped').addClass('solved');
+
             }
     
         },1000);
